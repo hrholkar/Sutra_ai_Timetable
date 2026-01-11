@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend/sandbox && npm start",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:backend": "cd backend/sandbox && npm install",
+    "install:frontend": "cd frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
